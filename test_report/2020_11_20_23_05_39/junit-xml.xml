@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="5" time="58.513" timestamp="2020-11-20T23:05:39.832603" hostname="XSA-20160602PCQ"><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case1]" time="17.409" /><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case2]" time="10.662" /><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case3]" time="10.800" /><testcase classname="test_dir.test_parametrize" name="test_baidu_search2[1-Selenium]" time="8.643"><failure message="AssertionError: assert '百度一下，你就知道' == 'Selenium_百度搜索'&#10;  - Selenium_百度搜索&#10;  + 百度一下，你就知道">name = 1, search_key = 'Selenium', browser = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="d9fc5f0f-0bbb-4cf0-9c36-8f878032dac9")&gt;, base_url = 'https://www.baidu.com'
+
+    @pytest.mark.parametrize(
+        "name, search_key",
+        get_data(base_path + "/test_dir/data/data_file.json")
+    )
+    def test_baidu_search2(name, search_key, browser, base_url):
+        page = BaiduPage(browser)
+        sleep(2)
+        page.get(base_url)
+        sleep(2)
+        page.search_input = search_key
+        sleep(2)
+        page.search_button.click()
+&gt;       assert browser.title == search_key + "_百度搜索"
+E       AssertionError: assert '百度一下，你就知道' == 'Selenium_百度搜索'
+E         - Selenium_百度搜索
+E         + 百度一下，你就知道
+
+test_dir\test_parametrize.py:62: AssertionError</failure></testcase><testcase classname="test_dir.test_parametrize" name="test_baidu_search2[2-poium]" time="9.614"><failure message="AssertionError: assert '百度一下，你就知道' == 'poium_百度搜索'&#10;  - poium_百度搜索&#10;  + 百度一下，你就知道">name = 2, search_key = 'poium', browser = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="d9fc5f0f-0bbb-4cf0-9c36-8f878032dac9")&gt;, base_url = 'https://www.baidu.com'
+
+    @pytest.mark.parametrize(
+        "name, search_key",
+        get_data(base_path + "/test_dir/data/data_file.json")
+    )
+    def test_baidu_search2(name, search_key, browser, base_url):
+        page = BaiduPage(browser)
+        sleep(2)
+        page.get(base_url)
+        sleep(2)
+        page.search_input = search_key
+        sleep(2)
+        page.search_button.click()
+&gt;       assert browser.title == search_key + "_百度搜索"
+E       AssertionError: assert '百度一下，你就知道' == 'poium_百度搜索'
+E         - poium_百度搜索
+E         + 百度一下，你就知道
+
+test_dir\test_parametrize.py:62: AssertionError</failure></testcase></testsuite></testsuites>

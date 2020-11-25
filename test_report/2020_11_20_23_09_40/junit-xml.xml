@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="40.537" timestamp="2020-11-20T23:09:40.532603" hostname="XSA-20160602PCQ"><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case1]" time="18.101" /><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case2]" time="10.608" /><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case3]" time="10.703" /><testcase classname="test_dir.test_parametrize" name="test_baidu_search2[1-Selenium]" time="0.001"><failure message="NameError: name 'page' is not defined">name = 1, search_key = 'Selenium'
+
+    @pytest.mark.parametrize(
+        "name, search_key",
+        get_data(base_path + "/test_dir/data/data_file.json")
+    )
+    def test_baidu_search2(name, search_key):
+        '''page = BaiduPage(browser)
+        sleep(2)
+        page.get(base_url)
+        sleep(2)'''
+&gt;       page.search_input = search_key
+E       NameError: name 'page' is not defined
+
+test_dir\test_parametrize.py:59: NameError</failure></testcase></testsuite></testsuites>

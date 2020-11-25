@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="3" failures="2" skipped="0" tests="5" time="26.649" timestamp="2020-11-20T22:53:18.900603" hostname="XSA-20160602PCQ"><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case1]" time="4.970"><error message="failed on setup with &quot;file D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py, line 16&#10;  @pytest.mark.parametrize(&#10;      &quot;name, search_key&quot;,&#10;      [(&quot;1&quot;, &quot;Selenium&quot;),&#10;       (&quot;2&quot;, &quot;pytest文档&quot;),&#10;       (&quot;3&quot;, &quot;pytest-html&quot;),&#10;       ],&#10;      ids=[&quot;case1&quot;, &quot;case2&quot;, &quot;case3&quot;]&#10;  )&#10;  def test_baidu_search1(self, name, search_key, browser, base_url):&#10;E       fixture 'self' not found&#10;&gt;       available fixtures: base_url, browser, browser_close, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory&#10;&gt;       use 'pytest --fixtures [testpath]' for help on them.&#10;&#10;D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py:16&quot;">file D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py, line 16
+  @pytest.mark.parametrize(
+      "name, search_key",
+      [("1", "Selenium"),
+       ("2", "pytest文档"),
+       ("3", "pytest-html"),
+       ],
+      ids=["case1", "case2", "case3"]
+  )
+  def test_baidu_search1(self, name, search_key, browser, base_url):
+E       fixture 'self' not found
+&gt;       available fixtures: base_url, browser, browser_close, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+&gt;       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py:16</error></testcase><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case2]" time="0.000"><error message="failed on setup with &quot;file D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py, line 16&#10;  @pytest.mark.parametrize(&#10;      &quot;name, search_key&quot;,&#10;      [(&quot;1&quot;, &quot;Selenium&quot;),&#10;       (&quot;2&quot;, &quot;pytest文档&quot;),&#10;       (&quot;3&quot;, &quot;pytest-html&quot;),&#10;       ],&#10;      ids=[&quot;case1&quot;, &quot;case2&quot;, &quot;case3&quot;]&#10;  )&#10;  def test_baidu_search1(self, name, search_key, browser, base_url):&#10;E       fixture 'self' not found&#10;&gt;       available fixtures: base_url, browser, browser_close, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory&#10;&gt;       use 'pytest --fixtures [testpath]' for help on them.&#10;&#10;D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py:16&quot;">file D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py, line 16
+  @pytest.mark.parametrize(
+      "name, search_key",
+      [("1", "Selenium"),
+       ("2", "pytest文档"),
+       ("3", "pytest-html"),
+       ],
+      ids=["case1", "case2", "case3"]
+  )
+  def test_baidu_search1(self, name, search_key, browser, base_url):
+E       fixture 'self' not found
+&gt;       available fixtures: base_url, browser, browser_close, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+&gt;       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py:16</error></testcase><testcase classname="test_dir.test_parametrize" name="test_baidu_search1[case3]" time="0.000"><error message="failed on setup with &quot;file D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py, line 16&#10;  @pytest.mark.parametrize(&#10;      &quot;name, search_key&quot;,&#10;      [(&quot;1&quot;, &quot;Selenium&quot;),&#10;       (&quot;2&quot;, &quot;pytest文档&quot;),&#10;       (&quot;3&quot;, &quot;pytest-html&quot;),&#10;       ],&#10;      ids=[&quot;case1&quot;, &quot;case2&quot;, &quot;case3&quot;]&#10;  )&#10;  def test_baidu_search1(self, name, search_key, browser, base_url):&#10;E       fixture 'self' not found&#10;&gt;       available fixtures: base_url, browser, browser_close, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory&#10;&gt;       use 'pytest --fixtures [testpath]' for help on them.&#10;&#10;D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py:16&quot;">file D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py, line 16
+  @pytest.mark.parametrize(
+      "name, search_key",
+      [("1", "Selenium"),
+       ("2", "pytest文档"),
+       ("3", "pytest-html"),
+       ],
+      ids=["case1", "case2", "case3"]
+  )
+  def test_baidu_search1(self, name, search_key, browser, base_url):
+E       fixture 'self' not found
+&gt;       available fixtures: base_url, browser, browser_close, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+&gt;       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\pyautoTest\pyautoTest\test_dir\test_parametrize.py:16</error></testcase><testcase classname="test_dir.test_parametrize" name="test_baidu_search2[1-Selenium]" time="10.385"><failure message="AssertionError: assert '百度一下，你就知道' == 'Selenium_百度搜索'&#10;  - Selenium_百度搜索&#10;  + 百度一下，你就知道">name = 1, search_key = 'Selenium', browser = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="5ce7cdb0-f049-45bb-9716-25fcfe6e2b24")&gt;, base_url = 'https://www.baidu.com'
+
+    @pytest.mark.parametrize(
+        "name, search_key",
+        get_data(base_path + "/test_dir/data/data_file.json")
+    )
+    def test_baidu_search2(name, search_key, browser, base_url):
+        page = BaiduPage(browser)
+        sleep(2)
+        page.get(base_url)
+        sleep(2)
+        page.search_input = search_key
+        sleep(2)
+        page.search_button.click()
+&gt;       assert browser.title == search_key + "_百度搜索"
+E       AssertionError: assert '百度一下，你就知道' == 'Selenium_百度搜索'
+E         - Selenium_百度搜索
+E         + 百度一下，你就知道
+
+test_dir\test_parametrize.py:62: AssertionError</failure></testcase><testcase classname="test_dir.test_parametrize" name="test_baidu_search2[2-poium]" time="9.543"><failure message="AssertionError: assert '百度一下，你就知道' == 'poium_百度搜索'&#10;  - poium_百度搜索&#10;  + 百度一下，你就知道">name = 2, search_key = 'poium', browser = &lt;selenium.webdriver.firefox.webdriver.WebDriver (session="5ce7cdb0-f049-45bb-9716-25fcfe6e2b24")&gt;, base_url = 'https://www.baidu.com'
+
+    @pytest.mark.parametrize(
+        "name, search_key",
+        get_data(base_path + "/test_dir/data/data_file.json")
+    )
+    def test_baidu_search2(name, search_key, browser, base_url):
+        page = BaiduPage(browser)
+        sleep(2)
+        page.get(base_url)
+        sleep(2)
+        page.search_input = search_key
+        sleep(2)
+        page.search_button.click()
+&gt;       assert browser.title == search_key + "_百度搜索"
+E       AssertionError: assert '百度一下，你就知道' == 'poium_百度搜索'
+E         - poium_百度搜索
+E         + 百度一下，你就知道
+
+test_dir\test_parametrize.py:62: AssertionError</failure></testcase></testsuite></testsuites>
